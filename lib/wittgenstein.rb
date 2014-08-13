@@ -1,0 +1,1 @@
+require 'wittgenstein/asshole.rb'

@@ -13,15 +13,14 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "wittgenstein"
   gem.homepage = "http://github.com/gametheoretic/wittgenstein"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{gem install wittgenstein}
   gem.email = "gametheoretic@gmail.com"
-  gem.authors = ["gametheoretic"]
-  # dependencies defined in Gemfile
+  gem.author = "michael d. towle"
+  gem.version = "0.0.1"
+  gem.files.include "lib/**/*"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -29,7 +28,7 @@ require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
+  test.verbose = false
 end
 
 desc "Code coverage detail"
